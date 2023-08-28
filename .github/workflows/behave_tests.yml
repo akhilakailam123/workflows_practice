@@ -1,0 +1,26 @@
+name: Run Behave Tests
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9  # Choose the Python version you need
+
+    - name: Install dependencies
+      run: |
+        pip install behave
+        # Add any other dependencies your tests require here
+
+    - name: Run Behave Tests
+      run: behave
+
