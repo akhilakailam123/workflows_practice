@@ -3,7 +3,7 @@ name: Run Behave Tests
 on: [push]
 
 jobs:
-  build:
+  behave_tests:
 
     runs-on: ubuntu-latest
 
