@@ -2,7 +2,7 @@ Feature: Calculator
     In order to perform arithmetic operations
     As a user
     I want to use the calculator
-git
+
     Scenario: Add two numbers
         Given I have entered 2 into the calculator
         And I have also entered 3 into the calculator
