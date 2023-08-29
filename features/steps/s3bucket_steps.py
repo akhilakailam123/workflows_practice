@@ -9,12 +9,7 @@ def step_impl(context):
 
 @when(u'Create an s3 bucket with name "{bucket_name}"')
 def step_impl(context, bucket_name):
-    context.client.create_bucket(
-        Bucket=bucket_name,
-        CreateBucketConfiguration={
-            'LocationConstraint': 'us-east-1'
-        }
-    )
+    context.client.create_bucket(Bucket=bucket_name)
     context.created_bucket_name = bucket_name
 
 
