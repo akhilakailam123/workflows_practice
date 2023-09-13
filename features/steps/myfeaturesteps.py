@@ -1,7 +1,7 @@
 from behave import given, when, then
 
 
-@given('I have entered {number:d} into the calculator')
+@given('I have entered {number:d} into the calculator.')
 def enter_number(context, number):
     context.number = number
 
